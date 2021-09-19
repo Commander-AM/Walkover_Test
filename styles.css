@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+.intro{
+    margin: 1em;
+    font-size: 35px;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: space-around;
+    margin: 1em;
+    padding: 1em;
+}
+
+.wrap > div{
+    height: 600px;
+    width: 30%;
+    margin: 1em;
+    padding: 1em;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
+
+.box1 > div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 50%
+}
+
+.box1 > div > div{
+    background-color: aqua;
+    width: 48%;
+    height:95%;
+    justify-content: center;
+    height: 50%
+    margin: 1em;
+    padding: 1em;
+}
+
+
+.box2 {
+  display: flex;
+  flex-direction: row;
+  background-color: orange;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box2 > div {
+     background-color: aqua;
+    width: 100%;
+    height:auto;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: row;
+  background-color: orange;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box3 > div {
+     background-color: aqua;
+    width: 60%;
+    height:40%;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+img {
+  display: block;
+  max-width:150px;
+  max-height:150px;
+  width: auto;
+  height: auto;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .intro {
+        font-size: 85%;
+        font-weight: normal;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        justify-content: space-around;
+        margin: 1em;
+        padding: 1em;
+}
+    .wrap > div{
+        width: auto;
+        background-color: yellow;
+    }
+}
